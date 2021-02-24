@@ -76,23 +76,22 @@ historyOfEverything.addRating(4);
 historyOfEverything.addRating(5);
 historyOfEverything.addRating(5);
 historyOfEverything.getAverageRating();
-// console.log(historyOfEverything.getAverageRating());
-// console.log(historyOfEverything.isCheckedOut);
+console.log(historyOfEverything);
+
 
 const speed = new Movie('Jan De Bont', 'Speed', 116);
 speed.toggleCheckOutStatus();
 speed.addRating(1)
 speed.addRating(1);
 speed.addRating(5);
-// console.log(speed.getAverageRating())
-// console.log(speed.isCheckedOut);
+console.log(speed)
+
 
 const Alvin = new CD('Alvin and the Chipmunks', 'Alvin', ['Bad Romance', 'Mess Around', 'A Friend Like You']);
 Alvin.toggleCheckOutStatus(false);
 Alvin.addRating(5);
 Alvin.addRating(1);
 Alvin.addRating(5);
-console.log(Alvin.getAverageRating());
 console.log(Alvin);
 
 
