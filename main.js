@@ -55,3 +55,44 @@ class Movie extends Media {
         return this._runTime;
     }
 }
+
+class CD extends Media {
+    constructor(artist, title, songs){
+        super(title);
+        this._artist = artist;
+        this._songs = songs;
+    }
+    getArtist(){
+        return this._artist;
+    }
+    getSongs(){
+        return this._songs;
+    }
+}
+
+const historyOfEverything = new Book('Bill Bryson', 'A Short History of Everything', 544);
+historyOfEverything.toggleCheckOutStatus(true);
+historyOfEverything.addRating(4);
+historyOfEverything.addRating(5);
+historyOfEverything.addRating(5);
+historyOfEverything.getAverageRating();
+// console.log(historyOfEverything.getAverageRating());
+// console.log(historyOfEverything.isCheckedOut);
+
+const speed = new Movie('Jan De Bont', 'Speed', 116);
+speed.toggleCheckOutStatus();
+speed.addRating(1)
+speed.addRating(1);
+speed.addRating(5);
+// console.log(speed.getAverageRating())
+// console.log(speed.isCheckedOut);
+
+const Alvin = new CD('Alvin and the Chipmunks', 'Alvin', ['Bad Romance', 'Mess Around', 'A Friend Like You']);
+Alvin.toggleCheckOutStatus(false);
+Alvin.addRating(5);
+Alvin.addRating(1);
+Alvin.addRating(5);
+console.log(Alvin.getAverageRating());
+console.log(Alvin);
+
+
