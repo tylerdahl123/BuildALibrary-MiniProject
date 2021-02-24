@@ -29,3 +29,29 @@ class Media {
     }
 
 } 
+class Book extends Media {
+    constructor(author, title, pages){
+        super(title);
+        this._author = author;
+        this._pages = pages;
+    }
+    getAuthor(){
+        return this._author;
+    }
+    getPages(){
+        return this._pages;
+    }
+}
+class Movie extends Media {
+    constructor(director, title, runTime){
+        super(title);
+        this._director = director;
+        this._runTime = runTime;
+    }
+    getDirector(){
+        return this._director;
+    }
+    getrunTime(){
+        return this._runTime;
+    }
+}
